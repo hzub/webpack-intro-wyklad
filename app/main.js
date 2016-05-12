@@ -1,7 +1,8 @@
-/* require('file?name=index.html!./index.html'); */
+require('file?name=index.html!./index.html');
 
-var module1 = require('./modules/module1');
-var module2 = require('./modules/module2');
+var contentModule = require('./modules/contentModule');
 
-module1.addContent();
-module2.doStyle();
+var mainStyle = require('./styles/style1.css');
+var additionalStyle = require('./styles/style2.css');
+
+contentModule.addContent();

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hzub/webpack-intro-wyklad#readme",
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "webpack": "^1.13.0"
   }
