@@ -44,19 +44,23 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
+	/* require('file?name=index.html!./index.html'); */
 
-	var module1 = __webpack_require__(2);
-	var module2 = __webpack_require__(3);
+	var module1 = __webpack_require__(1);
+	var module2 = __webpack_require__(2);
 
 	module1.run();
 	module2.run();
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "index.html";
+	module.exports = {
+		run: function() {
+			document.querySelector('h1').innerHTML = 'Dynamic content here!';
+		}
+	};
 
 /***/ },
 /* 2 */
@@ -64,17 +68,7 @@
 
 	module.exports = {
 		run: function() {
-			document.querySelector('div').innerHTML = 'Dynamic content here!';
-		}
-	};
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		run: function() {
-			document.querySelector('body').style.backgroundColor = 'tomato';
+			document.querySelector('body').style.backgroundColor = 'tomato'; 
 		}
 	};
 

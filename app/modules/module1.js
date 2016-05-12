@@ -1,5 +1,5 @@
 module.exports = {
 	run: function() {
-		document.querySelector('div').innerHTML = 'Dynamic content here!';
+		document.querySelector('h1').innerHTML = 'Dynamic content here!';
 	}
 };
