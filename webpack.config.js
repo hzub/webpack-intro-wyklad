@@ -11,6 +11,9 @@ module.exports = {
         loaders: [{
             test: /\.css$/,
             loader: extractTextPlugin.extract('css')
+        }, {
+            test: /\.less$/,
+            loader: extractTextPlugin.extract('css!less')
         }]
     },
     plugins: [

@@ -44,24 +44,25 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
+	__webpack_require__(3);
 
-	var contentModule = __webpack_require__(2);
+	var contentModule = __webpack_require__(4);
 
-	var mainStyle = __webpack_require__(3);
-	var additionalStyle = __webpack_require__(5);
+	var style = __webpack_require__(5);
 
 	contentModule.addContent();
 
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */,
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
 
 /***/ },
-/* 2 */
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -73,13 +74,6 @@
 	};
 
 /***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 4 */,
 /* 5 */
 /***/ function(module, exports) {
 
