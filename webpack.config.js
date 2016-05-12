@@ -16,7 +16,7 @@ module.exports = {
             loader: extractTextPlugin.extract('css!less')
         }, {
             test: /\.(jpg|png)$/,
-            loader: 'file'
+            loader: 'file?name=[path]/[name].[ext]'
         }, {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]'
