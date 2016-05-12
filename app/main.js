@@ -1,4 +1,4 @@
-require('file?name=index.html!./index.html');
+require('./index.html');
 
 var contentModule = require('./modules/contentModule');
 

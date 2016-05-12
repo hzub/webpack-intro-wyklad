@@ -14,7 +14,15 @@ module.exports = {
         }, {
             test: /\.less$/,
             loader: extractTextPlugin.extract('css!less')
+        }, {
+            test: /\.(jpg|png)$/,
+            loader: 'file'
+        }, {
+            test: /\.html$/,
+            loader: 'file?name=[name].[ext]'
         }]
+
+        //html?interpolate
     },
     plugins: [
         new extractTextPlugin('[name].css')
