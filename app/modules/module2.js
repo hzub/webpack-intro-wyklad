@@ -1,5 +1,7 @@
 module.exports = {
-	run: function() {
+
+	doStyle: function() {
 		document.querySelector('body').style.backgroundColor = 'tomato'; 
 	}
+
 };
