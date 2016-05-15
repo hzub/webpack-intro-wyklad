@@ -1,7 +1,10 @@
+var jquery = require('jquery');
+
 module.exports = {
 
 	addContent: function() {
-		document.querySelector('h1').innerHTML = 'Dynamic content here!';
+    console.log("halohalo", jquery('h1'));
+		jquery('h1').html('Dynamic content here!');
 	}
-	
+
 };
