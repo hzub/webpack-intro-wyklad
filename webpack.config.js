@@ -9,9 +9,6 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.css$/,
-            loader: extractTextPlugin.extract('css')
-        }, {
             test: /\.less$/,
             loader: extractTextPlugin.extract('css!less')
         }]
