@@ -1,4 +1,5 @@
 var extractTextPlugin = require("extract-text-webpack-plugin");
+var copyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     context: __dirname + "/app",
@@ -25,6 +26,11 @@ module.exports = {
         //html?interpolate
     },
     plugins: [
-        new extractTextPlugin('[name].css')
+        new extractTextPlugin('[name].css'),
+        new copyWebpackPlugin([{
+            context: 'images',
+            from: '**/*',
+            to: 'images'
+        }])
     ]
 };
