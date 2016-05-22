@@ -6,5 +6,15 @@ module.exports = {
     output: {
         path: __dirname + "/dist",
         filename: "[name].js"
+    },
+    module: {
+    	loaders: [{
+    		test: /\.js$/,
+    		loader: 'babel',
+    		exclude: /(node_modules)/,
+		    query: {
+		    	presets: ['es2015']
+		    }
+    	}]
     }
 };

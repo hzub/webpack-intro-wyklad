@@ -1,10 +1,13 @@
-var jquery = require('jquery');
 
-module.exports = {
-
-	addContent: function() {
-    console.log("halohalo", jquery('h1'));
-		jquery('h1').html('Dynamic content here!');
+class mojaKlasa {
+	constructor(x) {
+		this.zmienna = x;
 	}
+	getVariable(y) {
+		return ((z) => {
+			return this.zmienna * z;
+		})(y);
+	}
+}
 
-};
+module.exports = mojaKlasa;
