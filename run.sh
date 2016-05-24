@@ -1,3 +1,3 @@
 #!/bin/sh
 
-webpack-dev-server --inline --hot --content-base=app
+./node_modules/.bin/webpack-dev-server --inline --hot --content-base=app
